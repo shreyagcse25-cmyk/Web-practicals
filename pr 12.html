@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Bootstrap Mini Website</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    background: #eef2f7;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar with Dropdown -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+    <a class="navbar-brand" href="#">MySite</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        ☰
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Web Design</a></li>
+                    <li><a class="dropdown-item" href="#">Development</a></li>
+                    <li><a class="dropdown-item" href="#">Support</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>Responsive Bootstrap Mini Website with Components</p>
+</div>
+
+<div class="container mt-4">
+
+    <!-- Breadcrumb -->
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item">Pages</li>
+            <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+    </nav>
+
+    <!-- Cards Section -->
+    <div class="row text-center mb-4">
+
+        <div class="col-md-4 mb-3">
+            <div class="card p-3 shadow">
+                <h5>Fast</h5>
+                <p>Optimized and responsive layout.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card p-3 shadow">
+                <h5>Modern</h5>
+                <p>Clean and attractive design.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card p-3 shadow">
+                <h5>Responsive</h5>
+                <p>Works on all devices.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Form + Info Section -->
+    <div class="row">
+
+        <!-- Form -->
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow p-4">
+                <h4>Contact Form</h4>
+
+                <form>
+                    <div class="mb-3">
+                        <label>Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Message</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#successModal">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Info -->
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow p-4 text-center">
+                <h4>About Website</h4>
+                <p>This mini website demonstrates Bootstrap components like modal, dropdown, form and responsive grid.</p>
+
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModal">
+                    Learn More
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Success Modal -->
+<div class="modal fade" id="successModal">
+<div class="modal-dialog">
+<div class="modal-content">
+
+<div class="modal-header">
+    <h5 class="modal-title">Success</h5>
+    <button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+    Your form has been submitted successfully! 🎉
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Info Modal -->
+<div class="modal fade" id="infoModal">
+<div class="modal-dialog">
+<div class="modal-content">
+
+<div class="modal-header">
+    <h5 class="modal-title">About</h5>
+    <button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+    This project uses Bootstrap components such as dropdown, modal, breadcrumb and responsive layout.
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Advanced Bootstrap Website</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

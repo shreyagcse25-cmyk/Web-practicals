@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>Scholarship Registration Form</title>
+<style>
+    .easygame {
+  column-count: 1; 
+}
+
+@media (min-width: 600px) {
+  .easygame {
+    column-count: 3; 
+  }
+}</style>
+<link rel="stylesheet" href="all.css">
+</head>
+<div class = " easygame">
+<body bgcolor="lightblue">
+
+<h2>Scholarship Registration Form</h2>
+<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M480 576L192 576C139 576 96 533 96 480L96 160C96 107 139 64 192 64L496 64C522.5 64 544 85.5 544 112L544 400C544 420.9 530.6 438.7 512 445.3L512 512C529.7 512 544 526.3 544 544C544 561.7 529.7 576 512 576L480 576zM192 448C174.3 448 160 462.3 160 480C160 497.7 174.3 512 192 512L448 512L448 448L192 448zM224 216C224 229.3 234.7 240 248 240L424 240C437.3 240 448 229.3 448 216C448 202.7 437.3 192 424 192L248 192C234.7 192 224 202.7 224 216zM248 288C234.7 288 224 298.7 224 312C224 325.3 234.7 336 248 336L424 336C437.3 336 448 325.3 448 312C448 298.7 437.3 288 424 288L248 288z"/></svg>
+<form>
+
+<fieldset>
+<legend>Personal Details</legend>
+
+Name:
+<input type="text" name="name" placeholder="Enter your full name"><br><br>
+
+Email:
+<input type="email" name="email" placeholder="Enter your email"><br><br>
+
+Phone Number:
+<input type="text" name="phone" placeholder="Enter your phone number"><br><br>
+
+Gender:
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other"> Other
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Education <del></del></legend>
+
+Branch:
+<select name="branch">
+<option>Select Branch</option>
+<option>Computer Science</option>
+<option>Information Technology</option>
+<option>Mechanical</option>
+<option>Electrical</option>
+<option>Civil</option>
+</select>
+
+<br><br>
+
+Year:
+<select name="year">
+<option>Select Year</option>
+<option>1st Year</option>
+<option>2nd Year</option>
+<option>3rd Year</option>
+<option>4th Year</option>
+</select>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Other Details</legend>
+
+Caste:
+<input type="radio" name="caste"> SC
+<input type="radio" name="caste"> ST
+<input type="radio" name="caste"> OBC
+<input type="radio" name="caste"> General
+
+<br><br>
+
+Documents Submitted:
+<br>
+<input type="checkbox"> Aadhaar Card<br>
+<input type="checkbox"> Marksheet<br>
+<input type="checkbox"> caste certificate/validity
+
+</fieldset>
+
+<br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: linear-gradient(to left, red, blue, yellow);
+}
+
+.AB {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.AB img {
+    height: 200px;
+    width: 200px;
+    transition: 0.5s;
+}
+
+.AB img:hover {
+    transform: scale(1.1);
+}
